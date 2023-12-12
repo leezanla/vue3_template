@@ -42,7 +42,7 @@ request.interceptors.response.use(
             default:
                 message = "无网络";
         }
-        return Promise.reject(request);
+        return Promise.reject(error);
     }
 );
 export default request;
